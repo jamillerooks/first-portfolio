@@ -13,4 +13,4 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
-    
+})

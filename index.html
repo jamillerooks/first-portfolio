@@ -8,29 +8,88 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
-    
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    
+  
     <!-----Header Navigation Section-->
-    <nav  class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+    <header  class="navbar">
+        <nav class="max-width">
+            <h1 class="logo"><a href="#">Portfo<span>lio</span></a></h1>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about"class="menu-btn">About</a></li>
-                <li><a href="#services"class="menu-btn">Services</a></li>
-                <li><a href="#skills"class="menu-btn">Skills</a></li>
-                <li><a href="#teams"class="menu-btn">Teams</a></li>
+                <li><a href="#skills"class="menu-btn">About Me</a></li>
                 <li><a href="#contact"class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
+                <li><a href="#resume"class="menu-btn">Resume</a></li>
+               </ul>
+            <section class="menu-btn">
                 <i class="fas fa-bars"></i>
-            </div>
+            </section>
+        </nav>
+    </header>
+
+    <!--Home Section-->
+    <main class="home" id="home">
+        <section class="max-width">
+            <article class="home-content">
+                <h2 class="text-1">Hello, my name is</h2>
+                <p class="text-2">Jamille Rooks</p>
+                <p class="text-3">And I'm a <span class="typing"></span></p>
+                <a href="/assets/resume.pdf" download>Hire me</a>
+            </article>
+        </section>
+    </main>  
+    <img src="./assets/images/prism.jpg" alt="Multi-colored objects floating up" id="myImg" width="800" height="800">
+   
+   <!---About Section-->
+    <section class="about" id="about">
+        <section class="max-width">
+            <h2 class="title">About Me</h2>
+            <article class="about-content">
+                <section class="column left">
+                    <h2 class="text">My creative skills & experiences.</h2>
+                    <p>Jamille Rooks is a results driven real estate marketing and management professional with several years of experience working in high-pressure environments managing multiple projects.  She is enthusiastically, seeking to bring her organizational and problem solving expertise to a new career in <span>Web Development</span>. </p>
+                    <a href="#">Read more</a>
+            </section>
+                <section class="column right">
+                    <article class="bars">
+                        <aside class="info">
+                            <p>HTML</p>
+                            <p>90%</p>
+                        </aside>
+                        <aside class="line html"></aside>
+                    </article>
+                    <article class="bars">
+                        <aside class="info">
+                            <p>CSS</p>
+                            <p>80%</p>
+                        </aside>
+                        <aside class="line css"></aside>
+                    </article>
+                    <article class="bars">
+                        <aside class="info">
+                            <p>JavaScript</p>
+                            <p>70%</p>
+                    </aside>
+                        <aside class="line js"></aside>
+                    </article>
+                    <article class="bars">
+                        <aside class="info">
+                            <p>Git</p>
+                            <p>75%</p>
+                        </aside>
+                        <aside class="line php"></aside>
+                    </article>
+                    <article class="bars">
+                        <aside class="info">
+                            <p>React</p>
+                            <p>60%</p>
+                        </aside>
+                        <aside class="line mysql"></aside>
+                    </article>
+                </section>
+                
+                </article>
+            </section>
         </div>
-    </nav>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

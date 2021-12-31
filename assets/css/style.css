@@ -28,7 +28,7 @@ html{
     padding: 0 80px;
     margin: auto;
 }
-/*Navbar styling*/
+/*Header and navbar section*/
 .navbar{
     position: fixed;
     width: 100%;
@@ -40,7 +40,7 @@ html{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background-color: var(--sixth-color); 
+    background: var(--sixth-color); 
 }
 .navbar .max-width{
     display: flex;
@@ -59,7 +59,7 @@ html{
     color:var(--sixth-color);
 }
 .navbar.sticky .logo a span{
-    color: var(--fifth-color);
+    color: var(--seventh-color);
 }
 .navbar .menu li{
     list-style: none;
@@ -76,33 +76,195 @@ html{
 .navbar .menu li a:hover{
     color: var(--first-color);
 }
-/*Menu Button Styling*/
+/*Menu button*/
 .menu-btn{
     color: var(--third-color);
     font-size: 23px;
     cursor: pointer;
     display: none;
 }  
-.scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    background: var(--sixth-color);
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: var(--third-color);
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 15px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
+
+/* Home Section*/
+.home{
+    display: flex;
+    background: url("C:/Users/Jamil/OneDrive/Desktop/portfolio/assets/images/banner1.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color:var(--third-color);
+    min-height:  500px;
+    font-family: 'Ubuntu', sans-serif;
 }
-.scroll-up-btn.show{
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: var(--sixth-color);
+    font-weight: 700;
+    font-size: larger;
+ }
+ .home .home-content a{
+     display: inline-block;
+     background: var(--sixth-color);
+     color: var(--third-color);
+     font-size: 25px;
+     font-weight: 400;
+     padding: 12px 36px;
+     margin-top: 20px;
+     border-radius: 15px;
+     border: 2px solid var(--third-color);
+     transition: all 0.3s ease;
+ }
+ .home .home-content a:hover{
+    color: var(--sixth-color);
+    background: none;
+ }
+ #myImg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    animation: mymove 5s infinite;
+  }  
+    @keyframes mymove {
+    0% {
+      object-position: 0% 0%;
+    }
+    25% {
+      object-position: 20% 0%;
+    }
+    100% {
+      object-position: 100% 100%;
+    }
+  }
+  /*All similar content section*/
+section{
+    padding: 100px 0;
+}
+ .about, .contact, footer{
+    font-family: 'Poppins', sans-serif;   
+    }
+    section .title{
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    section .title::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: var(--fourth-color);
+        transform: translateX(-50%);
+    }
+    section .title::after{
+       color:var(--sixth-color) ;
+       position: absolute;
+       bottom: -12px;
+       left: 50%;
+       font-size: 20px;
+       padding:5px;
+       background: var(--third-color);
+       transform: translateX(-50%);
+   }
+ 
+ /*About Section*/
+ .about .about-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .title::after{
+    content: "What I know";
+}
+.about .about-content .column{
+    width: calc(50% - 30px);
+}
+.about .about-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .left p{
+    text-align: justify;
+}
+.about .about-content .left p span{
+    font-weight: bold;
+}
+.about .about-content .left a{
+    display: inline-block;
+    background: var(--sixth-color);
+    color: var(--third-color);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--third-color);
+    transition: all 0.3s ease;  
+}
+.about .about-content .left a:hover{
+   color: var(--sixth-color); 
+   background: none;
+}
+.about .about-content .right .bars{
+    margin-bottom: 15px;
+}
+.about .about-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .right .span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.about .about-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: var(--tenth-color);
+    position: relative;
+}
+.about .about-content .right .line::before{
+    content:"";
+    position:absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--sixth-color);
+}
+.about .about-content .right .html::before{
+    width: 90%;
+}
+.about .about-content .right .css::before{
+    width: 60%;
+}
+.about .about-content .right .js::before{
+    width: 80%;
+}
+.about .about-content .right .php::before{
+    width: 50%;
+}
+.about .about-content .right .mysql::before{
+    width: 70%;
 }
