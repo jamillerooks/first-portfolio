@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap');
+
+:root {
+	--navbar-color: linear-gradient(to bottom, #9e3ac0 5%, #116e6e 70%);
+	--menu-color: coral;
+	--border-right: #9e3ac0;
+	--background-color: #116e6e;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: wheat;
+}
+
+/* Header and Navbar*/
+
+.navbar {
+	background: var(--navbar-color);
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	color: wheat;
+}
+
+.logo {
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+	margin-right: auto;
+}
+
+.menu-item a {
+	margin-right: 20px;
+	color: wheat;
+	text-decoration: underline;
+}
+
+.menu-item a:hover {
+	color: var(--menu-color);
+	transition: 0.04s;
+}
+
+.menu-item {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	transition: color 0.4s ease;
+	color: wheat;
+}
+
+.check-btn {
+	font-size: 30px;
+	display: inline-block;
+	margin-left: auto;
+	line-height: 80px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+/* Animation feature of header*/
+
+#main-pic {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 0;
+	object-fit: cover;
+	object-position: 0% 0%;
+	animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+	0% {
+		object-position: 0% 0%;
+	}
+	25% {
+		object-position: 20% 0%;
+	}
+	100% {
+		object-position: 100% 100%;
+	}
+}
+
+/*Work Section*/
+
+.img-container {
+	width: 70%;
+	height: 400px;
+	margin-right: 80px;
+	padding-left: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.top-box {
+	border: 2px solid var(--border-right);
+	width: 98%;
+	height: 120px;
+	position: relative;
+}
+.box {
+	border: 2px solid var(--border-right);
+	width: 48%;
+	height: 120px;
+	position: relative;
+}
+.text-block {
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+	background-color: var(--background-color);
+	color: wheat;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.topwork-img {
+	width: 100%;
+	height: 120px;
+	object-fit: cover;
+}
+
+.topwork-img:hover {
+	transform: scale(1.5);
+}
+
+.work-img {
+	width: 100%;
+	height: 120px;
+	object-fit: cover;
+}
+.work-img:hover {
+	transform: scale(1.5);
+}
+
+/*Contact Section*/
+.footer-detail {
+	display: inline-flex;
+	font-size: 20px;
+}
+
+#email {
+	color: wheat;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+.profile-container {
+	position: relative;
+}
+#profile-pic {
+	position: absolute;
+	top: -50px;
+	right: 85px;
+	width: 175px;
+	height: auto;
+}
+
+/*Responsive Web design Section*/
+@media screen and (max-width: 952px) {
+	.logo {
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	.menu-item {
+		font-size: 16px;
+	}
+}
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--background-color);
+	justify-content: center;
+	align-items: top;
+	padding-top: 20px;
+	margin-top: -4px;
+	border-style: 5px solid;
+	padding-bottom: 30px;
+}
+.left {
+	width: 115px;
+	height: 100vh;
+	text-align: right;
+	padding-right: 15px;
+	margin-left: 60px;
+	border-right: 2px solid var(--border-right);
+	font-weight: 400;
+	height: auto;
+}
+
+.right {
+	width: 70%;
+	margin-right: 80px;
+	font-size: 16px;
+	line-height: 1.8;
+	padding-left: 20px;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 858px) {
+	.check-btn {
+		display: block;
+	}
+	.menu-list {
+		position: fixed;
+		clear: both;
+		width: 100%;
+		background: var(--navbar-color);
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		height: 100vh;
+		transition: all 0.4s ease;
+	}
+
+	.menu-item {
+		display: block;
+		font-size: 20px;
+		margin: 50px 0;
+		line-height: 30px;
+		background: var(--navbar-color);
+	}
+	.menu-item a {
+		margin-right: 20px;
+		color: wheat;
+	}
+
+	.menu-item a:hover {
+		background: none;
+		color: var(--menu-color);
+	}
+
+	#check:checked ~ .menu-list {
+		left: 0;
+	}
+}

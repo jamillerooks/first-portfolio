@@ -1,95 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-  
-    <!-----Header Navigation Section-->
-    <header  class="navbar">
-        <nav class="max-width">
-            <h1 class="logo"><a href="#">Portfo<span>lio</span></a></h1>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#skills"class="menu-btn">About Me</a></li>
-                <li><a href="#contact"class="menu-btn">Contact</a></li>
-                <li><a href="#resume"class="menu-btn">Resume</a></li>
-               </ul>
-            <section class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </section>
-        </nav>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<script
+			src="https://kit.fontawesome.com/c26782b04b.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<!--Header and Navigation Section-->
+		<header>
+			<nav class="navbar">
+				<h1 class="logo">Jamille Rooks</h1>
+				<input type="checkbox" id="check" />
+				<label for="check" class="check-btn">
+					<i class="fas fa-bars"></i>
+				</label>
+				<ul class="menu-list">
+					<li class="menu-item active"><a href="#about">About</a></li>
+					<li class="menu-item"><a href="#work">Work</a></li>
+					<li class="menu-item"><a href="#contact">Contact</a></li>
+					<li class="menu-item">
+						<a
+							href="https://docs.google.com/document/d/e/2PACX-1vS7iMiLqyDRH6BiXXtvAHQgdiW3TdemH9abM0GONBJBsovE9v1jotZeGTPeRTev7LakAZdCt5zMvKAX/pub"
+							target="_blank"
+							>Resume</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    <!--Home Section-->
-    <main class="home" id="home">
-        <section class="max-width">
-            <article class="home-content">
-                <h2 class="text-1">Hello, my name is</h2>
-                <p class="text-2">Jamille Rooks</p>
-                <p class="text-3">And I'm a <span class="typing"></span></p>
-                <a href="/assets/resume.pdf" download>Hire me</a>
-            </article>
-        </section>
-    </main>  
-    <img src="./assets/images/prism.jpg" alt="Multi-colored objects floating up" id="myImg" width="800" height="800">
-   
-   <!---About Section-->
-    <section class="about" id="about">
-        <section class="max-width">
-            <h2 class="title">About Me</h2>
-            <article class="about-content">
-                <section class="column left">
-                    <h2 class="text">My creative skills & experiences.</h2>
-                    <p>Jamille Rooks is a results driven real estate marketing and management professional with several years of experience working in high-pressure environments managing multiple projects.  She is enthusiastically, seeking to bring her organizational and problem solving expertise to a new career in <span>Web Development</span>. </p>
-                    <a href="#">Read more</a>
-            </section>
-                <section class="column right">
-                    <article class="bars">
-                        <aside class="info">
-                            <p>HTML</p>
-                            <p>90%</p>
-                        </aside>
-                        <aside class="line html"></aside>
-                    </article>
-                    <article class="bars">
-                        <aside class="info">
-                            <p>CSS</p>
-                            <p>80%</p>
-                        </aside>
-                        <aside class="line css"></aside>
-                    </article>
-                    <article class="bars">
-                        <aside class="info">
-                            <p>JavaScript</p>
-                            <p>70%</p>
-                    </aside>
-                        <aside class="line js"></aside>
-                    </article>
-                    <article class="bars">
-                        <aside class="info">
-                            <p>Git</p>
-                            <p>75%</p>
-                        </aside>
-                        <aside class="line php"></aside>
-                    </article>
-                    <article class="bars">
-                        <aside class="info">
-                            <p>React</p>
-                            <p>60%</p>
-                        </aside>
-                        <aside class="line mysql"></aside>
-                    </article>
-                </section>
-                
-                </article>
-            </section>
-        </div>
-    </section>
-    <script src="script.js"></script>
-</body>
+		<!----- Animation srcoll for header-->
+		<section>
+			<a
+				><img
+					src="./images/prism.jpg"
+					id="main-pic"
+					alt="Multi-colored objects floating up"
+			/></a>
+		</section>
+
+		<!----About me Section-->
+		<section class="flex-container" id="about">
+			<h2 class="section-header left">About Me</h2>
+			<p class="section-text right">
+				Jamille Rooks is a results driven real estate marketing and management
+				professional with several years of experience working in high-pressure
+				environments managing multiple projects. She is enthusiastically,
+				seeking to bring her organizational and problem solving expertise to a
+				new career in <span>Web Development</span>.
+			</p>
+		</section>
+
+		<!----Work Section-->
+		<section class="flex-container" id="work">
+			<h2 class="left">Work</h2>
+			<div class="img-container">
+				<article class="top-box">
+					<a
+						href="https://jamillerooks.github.io/horiseon-code-refactor/"
+						target="_blank"
+					>
+						<img
+							src="./images/search-engine-optimization.jpg"
+							class="topwork-img"
+							alt=""
+					/></a>
+					<label class="text-block">
+						<h4>Code-refactor</h4>
+						<p>HTML</p>
+					</label>
+				</article>
+				<article class="box">
+					<a href="#">
+						<img src="./images/logo.png" class="work-img" alt=""
+					/></a>
+					<label class="text-block">
+						<h4>Web design</h4>
+						<p>CSS</p>
+					</label>
+				</article>
+				<article class="box">
+					<a href="#">
+						<img src="./images/JavaScript.jpg" class="work-img" alt=""
+					/></a>
+					<label class="text-block">
+						<h4>Coming Soon</h4>
+						<p>JavaScript</p>
+					</label>
+				</article>
+				<article class="box">
+					<a href="#">
+						<img src="./images/reactjs.jpg" class="work-img" alt=""
+					/></a>
+					<label class="text-block">
+						<h4>Coming Soon</h4>
+						<p>React</p>
+					</label>
+				</article>
+				<article class="box">
+					<a href="#">
+						<img src="./images/course-data.jpg" class="work-img" alt=""
+					/></a>
+					<label class="text-block">
+						<h4>Coming Soon</h4>
+						<p>Data Analysis</p>
+					</label>
+				</article>
+			</div>
+		</section>
+
+		<!-----Contact Section-->
+		<section class="flex-container" id="contact">
+			<h2 class="section-header left">Contact Me</h2>
+			<div class="section-header right">
+				<p><i class="fa fa-phone"></i> 706-570-5790</p>
+				<p>
+					<a
+						href="mailto:jamillerooks@outlook.com"
+						id="email"
+						class="fa fa-envelope"
+						class="icon"
+					>
+						JamilleRooks@outlook.com</a
+					>
+				</p>
+				<p>
+					<a
+						href="https://github.com/jamillerooks/first-portfolio"
+						target="_blank"
+						class="fa fa-github"
+						class="icon"
+					></a>
+					GitHub
+				</p>
+				<p>
+					<a
+						href="https://twitter.com/JamilleRooks"
+						target="_blank"
+						class="fa fa-twitter"
+					></a
+					>Twitter
+				</p>
+				<p>
+					<a
+						href="https://www.facebook.com/SparrowRentals"
+						target="_blank"
+						class="fa fa-facebook"
+						class="icon"
+					></a
+					>Facebook
+				</p>
+			</div>
+			<div class="profile-container">
+				<img
+					src="./images/profile.png"
+					id="profile-pic"
+					alt="Headshot of Jamille Rooks"
+				/>
+			</div>
+		</section>
+	</body>
 </html>
