@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap');
 
+/* Color Pallet*/
 :root {
 	--navbar-color: linear-gradient(to bottom, #9e3ac0 5%, #116e6e 70%);
 	--menu-color: coral;
@@ -126,6 +127,7 @@ body {
 	width: 48%;
 	height: 120px;
 	position: relative;
+	margin-top: 35px;
 }
 .text-block {
 	position: absolute;
@@ -156,6 +158,7 @@ body {
 	transform: scale(1.5);
 }
 
+
 /*Contact Section*/
 .footer-detail {
 	display: inline-flex;
@@ -175,7 +178,7 @@ body {
 }
 #profile-pic {
 	position: absolute;
-	top: -50px;
+	top: -25px;
 	right: 85px;
 	width: 175px;
 	height: auto;

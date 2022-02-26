@@ -5,7 +5,7 @@ This is my first portfolio as a student in the Georgia Tech Coding Bootcamp.
 The goal of this project is to showcase my Web Design, HTML and CSS skills to perspective employers.  <a href="https://jamillerooks.github.io/first-portfolio/" target="_blank">Link to Jamille Rooks First Portfolio</a>
 
 # Mock-Up
-<img src="./images/screenshot.png" alt="image of business mock-up for project">
+<img src="./images/screenshot.png" alt="Jamille Rooks portfolio">
 
 # Contribution Guidelines
 Your suggestions are welcome to help us achieve the goal of improved website accessibility and SEO ranking. 
